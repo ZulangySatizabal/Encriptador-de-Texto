@@ -1,0 +1,41 @@
+:root {
+  --light-blue-100: #f3f5fc;
+  --dark-blue-300: #0a3871;
+  --gray-gray-400: #495057;
+}
+body {
+  background: var(--light-blue-100);
+  font-family: "Inter", sans-serif;
+}
+.header {
+  padding: 40px;
+  width: 120px;
+  height: 48px;
+}
+.container {
+  width: 577px;
+  margin: 0 80px;
+  padding: 5px 10px;
+}
+.textbox__input {
+  background-color: var(--light-blue-100);
+  color: var(--dark-blue-300);
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 150%;
+  border: none;
+}
+
+.warning {
+  display: flex;
+  vertical-align: middle;
+  text-align: center;
+}
+.warning__text {
+  color: var(--gray-gray-400);
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 150%;
+  opacity: 0.800000011920929;
+  padding: 0 8px;
+}
