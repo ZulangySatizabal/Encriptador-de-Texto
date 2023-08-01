@@ -39,3 +39,23 @@ body {
   opacity: 0.800000011920929;
   padding: 0 8px;
 }
+
+.container__button {
+  display: flex;
+  justify-content: space-around;
+}
+.button {
+  border-radius: 24px;
+  width: 328px;
+  padding: 24px;
+  margin: 32px;
+}
+.button_encrypt {
+  background-color: var(--dark-blue-300);
+  color: white;
+}
+.button__decrypt {
+  color: var(--dark-blue-300);
+  border: 1px solid var(--dark-blue-300);
+  background: #d8dfe8;
+}
