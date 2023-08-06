@@ -20,17 +20,32 @@
 
     <main>
         <div class="container">
-            <div class="textbox">
-                <input class="textbox__input" type="text" placeholder="Ingrese el texto aquí" inputmode="verbatim">
-            </div>
-            <div class="actions">
-                <div class="warning">
-                    <img class="warning__icon" src="img/bi_exclamation-circle-fill.svg" alt="icon info">
-                    <p class="warning__text">Solo letras minúsculas y sin acentos</p>
+            <form class="form">
+                <div class="container_input">
+                    <div class="textbox">
+                        <input class="textbox__input" type="text" placeholder="Ingrese el texto aquí"
+                            inputmode="verbatim">
+                    </div>
+                    <div class="actions">
+                        <div class="warning">
+                            <img class="warning__icon" src="img/bi_exclamation-circle-fill.svg" alt="icon info">
+                            <p class="warning__text">Solo letras minúsculas y sin acentos</p>
+                        </div>
+                        <div class="container__button">
+                            <button class="button button_encrypt">Encriptar</button>
+                            <button class="button button__decrypt">Desencriptar</button>
+                        </div>
+                    </div>
                 </div>
-                <div class="container__button">
-                    <button class="button button_encrypt">Encriptar</button>
-                    <button class="button button__decrypt">Desencriptar</button>
+            </form>
+            <div class="container_output">
+                <div class="out_d"><!-- output_display -->
+
+                </div>
+                <div class="ini_s"><!-- initial_state -->
+                    <img src="img/Muñeco.png" alt="Niño buscando diamante">
+                    <p class="ini_s__tittle">Ningún mensaje fue encontrado</p>
+                    <p class="ini_s__text">Ingresa el texto que desees encriptar o desencriptar.</p>
                 </div>
             </div>
         </div>
