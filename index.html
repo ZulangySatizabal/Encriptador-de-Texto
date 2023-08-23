@@ -32,30 +32,34 @@
                             <p class="warning__text">Solo letras minúsculas y sin acentos</p>
                         </div>
                         <div class="container__button">
-                            <button class="button button_encrypt">Encriptar</button>
-                            <button class="button button__decrypt">Desencriptar</button>
+                            <button class="button button_encrypt" type="button" onclick="encriptar()">Encriptar</button>
+                            <button class="button button__decrypt" type="button"
+                                onclick="desencriptar()">Desencriptar</button>
                         </div>
                     </div>
                 </div>
             </form>
             <div class="container_output">
-                <div class="out_d"><!-- output_display -->
-                </div>
                 <div class="ini_s"><!-- initial_state -->
                     <div class="is__img">
-                        <img class="ini_s__img" src="img/Muñeco.png" alt="Niño buscando diamante">
+                        <img class="ini_s__img" src="img/Muñeco.png" alt="Muñeco">
                     </div>
                     <div class="is__p">
-                        <p class="is__p_title">Ningún mensaje fue encontrado</p>
-                        <p class="is__p_text">Ingresa el texto que desees encriptar o desencriptar.</p>
+                        <p class="is_title">Ningún mensaje fue encontrado</p>
+                        <p class="is_text">Ingresa el texto que desees encriptar o desencriptar.</p>
                     </div>
+                    <div class="copiar">
+                        <input type="button" class="button copiar__btn" value="Copiar">
+                    </div>
+                </div>
+                <div class="out_d"><!-- output_display -->
+                    <p class="out__resultado"></p>
                 </div>
             </div>
         </div>
     </main>
+    <script src="index.js"></script>
 </body>
-<footer>
 
-</footer>
 
 </html>

@@ -44,6 +44,10 @@ body {
   font-weight: 400;
   line-height: 150%;
   border: none;
+  cursor: pointer;
+}
+.textbox__input::placeholder {
+  color: var(--dark-blue-300);
 }
 
 .actions {
@@ -66,6 +70,7 @@ body {
 .container__button {
   display: flex;
   width: 100%;
+  margin-bottom: 25px;
 }
 .button {
   border-radius: 24px;
@@ -73,6 +78,7 @@ body {
   height: 67px;
   padding: 24px;
   gap: 8;
+  cursor: pointer;
 }
 .button_encrypt {
   background-color: var(--dark-blue-300);
@@ -115,16 +121,23 @@ body {
   align-items: flex-start;
   gap: 16px;
 }
-.is__p_title {
+.is_title {
   color: var(--gray-gray-500);
   margin: 32px 0 0;
   font-weight: 700;
   line-height: 120%;
   font-size: 24px;
 }
-.is__p_text {
+.is_text {
   color: var(--gray-gray-400);
   font-size: 16px;
   font-weight: 400;
   line-height: 150%;
+}
+
+.copiar__btn {
+  background-color: #ffffff;
+  color: var(--dark-blue-300);
+  border: 1px solid var(--dark-blue-300);
+  cursor: pointer;
 }
