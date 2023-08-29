@@ -45,6 +45,8 @@ body {
   line-height: 150%;
   border: none;
   cursor: pointer;
+  resize: none;
+  outline-style: none;
 }
 .textbox__input::placeholder {
   color: var(--dark-blue-300);
@@ -131,6 +133,25 @@ body {
 .is_text {
   color: var(--gray-gray-400);
   font-size: 16px;
+  font-weight: 400;
+  line-height: 150%;
+}
+
+.out_d {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 32px;
+  height: 100%;
+  border: 1px solid var(--gray-gray-400);
+  border-radius: 12px;
+  box-shadow: inset 2px 2px 24px 2px rgba(10, 56, 113, 0.31);
+}
+
+.out__resultado {
+  text-align: center;
+  color: var(--dark-blue-300);
+  font-size: 24px;
   font-weight: 400;
   line-height: 150%;
 }
