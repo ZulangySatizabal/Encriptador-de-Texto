@@ -8,6 +8,7 @@
     <link rel="shortcut icon" href="img/favicon.svg" type="image/x-icon">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
@@ -15,31 +16,33 @@
 </head>
 
 <body>
-    <header class="header">
-        <img class="header__logo" src="img/Logo.png" alt="Logo de Alura" />
+    <header>
+        <div class="header">
+            <img class="header__logo" src="img/Logo.png" alt="Logo de Alura" />
+            <h1 class="header__title">Encriptador de texto</h1>
+        </div>
     </header>
 
     <main>
         <div class="container">
-            <form class="form">
-                <div class="container_input">
-                    <div class="textbox">
-                        <textarea class="textbox__input" type="text" placeholder="Ingrese el texto aquí"
-                            inputmode="verbatim"></textarea>
+            <div class="container_input">
+                <div class="textbox">
+                    <textarea class="textbox__input" type="text" placeholder="Ingrese el texto aquí"
+                        inputmode="verbatim"></textarea>
+                </div>
+                <div class="actions">
+                    <div class="warning">
+                        <img class="warning__icon" src="img/bi_exclamation-circle-fill.svg" alt="icon info">
+                        <p class="warning__text">Solo letras minúsculas y sin acentos</p>
                     </div>
-                    <div class="actions">
-                        <div class="warning">
-                            <img class="warning__icon" src="img/bi_exclamation-circle-fill.svg" alt="icon info">
-                            <p class="warning__text">Solo letras minúsculas y sin acentos</p>
-                        </div>
-                        <div class="container__button">
-                            <button class="button button_encrypt" type="button" onclick="encriptar()">Encriptar</button>
-                            <button class="button button__decrypt" type="button"
-                                onclick="desencriptar()">Desencriptar</button>
-                        </div>
+                    <div class="container__button">
+                        <button class="button button_encrypt" type="button" onclick="encriptar()">Encriptar</button>
+                        <button class="button button__decrypt" type="button"
+                            onclick="desencriptar()">Desencriptar</button>
                     </div>
                 </div>
-            </form>
+            </div>
+
             <div class="container_output">
                 <div class="ini_s"><!-- initial_state -->
                     <div class="is__img">

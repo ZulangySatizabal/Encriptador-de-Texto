@@ -1,0 +1,23 @@
+@media screen and (max-width: 768px) {
+  .header {
+    padding: 10px;
+  }
+  .container_input {
+    margin: 10px;
+    max-width: 100%;
+    padding: 10px;
+  }
+  .button {
+    max-width: 100%;
+  }
+  .is__p {
+    width: 100%;
+  }
+  .footer {
+    /* padding: 10px; */
+    flex-direction: column;
+  }
+  .footer_icons {
+    margin-bottom: 30px;
+  }
+}
